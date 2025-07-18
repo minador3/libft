@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:18:31 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/17 21:14:57 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/18 20:31:59 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,16 @@
 
 void * ft_memset(void *b, int c, size_t len)
 {
-    (void)b;
-    (void)c;
-    (void)len; 
+    unsigned char *ptr;
+    unsigned char value;
+
+    unsigned char *ptr = (unsigned char *)b;
+    unsigned char value = (char)c;
+
+    while (len--)
+    {
+        *ptr = value;
+        ptr++;
+    }
     return (b);
 }
