@@ -6,20 +6,20 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:17:58 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/15 19:30:02 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/24 16:27:17 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int i)
+int	ft_isascii(int i)
 {
-    if (i >= 0 && i <= 127)
-    {
-        return (1);
-    }
-    else 
-    {
-        return (0); 
-    }
+	if (i >= 0 && i <= 127)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

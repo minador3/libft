@@ -6,20 +6,20 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:13:23 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/15 19:14:41 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/24 16:27:19 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int i)
+int	ft_isdigit(int i)
 {
-    if (i >= 48 && i <= 57)
-    {
-        return (1);
-    }
-    else 
-    {
-        return (0);
-    }
+	if (i >= 48 && i <= 57)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

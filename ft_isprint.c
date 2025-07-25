@@ -6,20 +6,20 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:20:24 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/15 19:30:07 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/24 16:27:21 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint (int i)
+int	ft_isprint(int i)
 {
-    if (i >= 32 && i <= 126)
-    {
-        return (1);
-    }
-    else 
-    {
-        return (0);
-    }
+	if (i >= 32 && i <= 126)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

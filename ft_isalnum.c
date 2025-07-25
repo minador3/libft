@@ -6,20 +6,20 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:25:48 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/16 21:04:54 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/24 16:23:58 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int i)
+int	ft_isalnum(int i)
 {
-    if (ft_isalpha(i) || ft_isdigit(i))
-    {
-        return 1;
-    }
-    else 
-    {
-        return 0;
-    }
+	if (ft_isalpha(i) || ft_isdigit(i))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

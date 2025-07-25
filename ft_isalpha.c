@@ -6,20 +6,20 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:33:07 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/16 21:16:16 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/24 16:24:03 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int i)
+int	ft_isalpha(int i)
 {
-    if ((i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z'))
-    {
-        return (1);
-    }
-    else 
-    {
-        return (0);
-    }
+	if ((i >= 'a' && i <= 'z') || (i >= 'A' && i <= 'Z'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

@@ -6,14 +6,13 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:28:03 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/18 17:27:06 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/24 16:26:22 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero (void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-(void)s;
-(void)n;
+	ft_memset(s, 0, n);
 }
