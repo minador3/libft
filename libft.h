@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 17:18:29 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 17:18:30 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/26 20:08:09 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <limits.h> // int min -2147483648  int max 2147483647
 # include <stdlib.h>
-# include <string.h>
 # include <unistd.h>
 
 int		ft_atoi(const char *str);
@@ -41,5 +40,9 @@ char	*strnstr(const char *haystack, const char *needle, size_t len);
 char	*strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int nb, int fd);
+void	ft_putstr_fd(char *s, int fd);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/24 15:56:22 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 16:28:15 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/26 20:22:15 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*p2;
 	size_t				i;
 
-	p1 = (unsigned char *)s1;
-	p2 = (unsigned char *)s2;
+	p1 = s1;
+	p2 = s2;
 	i = 0;
 	while (i < n)
 	{

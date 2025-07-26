@@ -6,8 +6,13 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 17:07:45 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 17:07:59 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/26 21:12:18 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+    
+}

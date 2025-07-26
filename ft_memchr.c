@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 19:07:49 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 17:17:05 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/26 20:15:44 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	const unsigned char	*ptr;
 	unsigned char		target;
 
-	target = (unsigned char)c;
-	ptr = (const unsigned char *)s;
+	target = c;
+	ptr = s;
 	while (n--)
 	{
 		if (*ptr == target)
