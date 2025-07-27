@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:10:28 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 21:36:45 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/27 15:31:17 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	len_s1 = ft_strlen(s1);
 	len_s2 = ft_strlen(s2);
-	result = (char *)malloc(len_s1 + len_s2 + 1);
+	result = (char *)malloc((len_s1 + len_s2 + 1) * sizeof(char));
 	if (!result)
 		return (NULL);
 	ft_strlcpy(result, s1, (len_s1 + len_s2 + 1));

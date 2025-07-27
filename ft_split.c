@@ -6,13 +6,13 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:09:46 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 21:09:55 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/27 19:12:37 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-char **ft_split(char const *s, char c)
-{
+// char **ft_split(char const *s, char c)
+// {
     
-}
+// }

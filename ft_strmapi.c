@@ -6,13 +6,13 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:08:58 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 21:09:16 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/27 19:13:24 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+// #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
-{
+// char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+// {
     
-}
+// }
