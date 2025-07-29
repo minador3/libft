@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:03:45 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 20:53:25 by mwei             ###   ########.fr       */
+/*   Updated: 2025/07/29 16:15:58 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,4 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (dst_len + src_len);
 }
+	 	 	 	
