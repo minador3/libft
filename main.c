@@ -6,17 +6,17 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 15:12:57 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/31 15:44:33 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/04 12:18:25 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "libft.h"
-#include <stdio.h>
-#include <string.h>
+// #include "libft.h"
+// #include <stdio.h>
+// #include <string.h>
 
-int	main(void)
-{
+// int	main(void)
+// {
 	// char	s[15] = "huisfvhfv";
 	// 	char	*s2;
 	// 	const char	s = '/';
@@ -46,7 +46,7 @@ int	main(void)
 
 	// printf("ft_itoa :%s\n", ft_itoa(2147483647));
 	// printf("ft_itoa :%s\n", ft_itoa(-2147483648));
-	// printf("ft_itoa :%s\n", ft_itoa(0));
+	// printf("ft_itoa :%s\n", ft_itoa(-0));
 
 	// printf("ft_memchr : %s\n", ft_memchr("Hello, World!", 'W', 8));
 	// printf("ft_memcmp : %d\n", ft_memcmp("Hello", "Hello", 5));
@@ -78,7 +78,7 @@ int	main(void)
 	// 	printf("ft_strncmp :%d\n", ft_strncmp(&s, s2, 4));
 	// 	printf("Ret: %d\n", strncmp("A", "a", 4));
 	// 	return (0);
-}
+// }
 
 // #include <fcntl.h>
 

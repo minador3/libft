@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:28:03 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/31 10:11:10 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/04 11:12:49 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,9 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	ft_memset(s, 0, n);
+	unsigned char *ptr;
+
+	ptr = (unsigned char *)s;
+	while (n--)
+		*ptr++ = 0;
 }

@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/23 16:23:24 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/04 11:09:21 by mwei             ###   ########.fr       */
+/*   Created: 2025/08/04 13:44:31 by mwei              #+#    #+#             */
+/*   Updated: 2025/08/04 14:44:00 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t count, size_t size)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	void	*ptr;
-
-	if (size != 0 && count > SIZE_MAX / size)
-		return (NULL);
-	ptr = malloc(count * size);
-	if (ptr == NULL)
-		return (NULL);
-	ft_memset(ptr, 0, count * size);
-	return (ptr);
+	if (!lst || !new)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }
+
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	t_list	*head = NULL;
+
+// 	ft_lstadd_front(&head, ft_lstnew("World"));
+// 	ft_lstadd_front(&head, ft_lstnew("Hello"));
+
+// 	printf("%s\n", (char *)head->content);
+// 	printf("%s\n", (char *)head->next->content);
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:32:49 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 17:18:10 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/01 12:01:49 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,19 @@
 char	*ft_strdup(const char *s1)
 {
 	size_t		len;
-	size_t		first;
+	size_t		i;
 	char		*dup;
 
 	len = ft_strlen(s1);
 	dup = (char *)malloc(sizeof(char) * (len + 1));
 	if (dup == NULL)
 		return (NULL);
-	first = 0;
-	while (first < len)
+	i = 0;
+	while (i < len)
 	{
-		dup[first] = s1[first];
-		first++;
+		dup[i] = s1[i];
+		i++;
 	}
-	dup[first] = '\0';
+	dup[i] = '\0';
 	return (dup);
 }
-// return (ft_substr(s1, 0 , ft_strlen(s1)));
