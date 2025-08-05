@@ -1,41 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/04 14:44:39 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 11:35:36 by mwei             ###   ########.fr       */
+/*   Created: 2025/08/05 13:17:07 by mwei              #+#    #+#             */
+/*   Updated: 2025/08/05 13:20:30 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_lstsize(t_list *lst)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	int	l_len;
+	t_list	*temp;
 
-	l_len = 0;
-	while (lst)
+	if (!lst || !*lst || !del)
+		return ;
+	while (lst != NULL && *lst != NULL)
 	{
-		lst = lst->next;
-		l_len++;
+		temp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = temp;
 	}
-	return (l_len);
 }
-
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	t_list *node1 = ft_lstnew("hello");
-// 	t_list *node2 = ft_lstnew("world");
-// 	t_list *node3 = ft_lstnew("?");
-
-// 	node1->next = node2;
-// 	node2->next = node3;
-
-// 	printf("size of list is %d\n", ft_lstsize(node1));
-// 	return (0);
-// }

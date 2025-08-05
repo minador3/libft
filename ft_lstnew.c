@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 12:03:35 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/04 13:44:19 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/05 11:25:41 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,21 +28,18 @@ t_list	*ft_lstnew(void *content)
 
 // int	main(void)
 // {
-// 	int		value;
-// 	t_list	*node;
+// 	int		data1;
+// 	char	data2;
+// 	t_list	*first;
+// 	t_list	*second;
 
-// 	value = 42;
-// 	node = ft_lstnew(&value);
-// 	if (!node)
-// 	{
-// 		printf("fail to create node");
-// 		return (1);
-// 	}
-// 	printf("content of node: %d\n", *(int *)(node->content));
-// 	if (node->next == NULL)
-// 		printf("the next node is NULL");
-// 	else
-// 		printf("the next node is not null");
-// 	free(node);
+// 	data1 = 42;
+// 	data2 = 'b';
+// 	first = ft_lstnew(&data1);
+// 	second = ft_lstnew(&data2);
+
+// 	first->next = second;
+// 	printf("First node contains: %d\n", *(int *)first->content);
+// 	printf("Second node contains: %c\n", *(char *)second->content);
 // 	return (0);
 // }
