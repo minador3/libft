@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:58:46 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/27 21:30:51 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 20:43:01 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,19 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *s1 = "hello";
+// 	const char *s2 = "heolo";
+// 	int c = ft_strncmp(s1, s2, 2);
+// 	if(!c)
+// 	{
+// 		printf("no comparison happened\n");
+// 		return (1);
+// 	}
+// 	else
+// 		printf("the difference is %d\n", c);
+// 	return (0);
+// }

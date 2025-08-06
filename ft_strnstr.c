@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: weimin <weimin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 16:24:38 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/25 16:48:02 by weimin           ###   ########.fr       */
+/*   Updated: 2025/08/06 20:47:34 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,15 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *haystack = "broccoli, bokchoi, cabbage, carrots";
+// 	const char *needle = "\0";
+// 	// const char *needle = "bokchoi";
+// 	char *found = ft_strnstr(haystack, needle, 10);
+// 	printf("%s\n", found);
+// 	return (0);
+// }

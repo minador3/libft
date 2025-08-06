@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:28:03 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 17:19:45 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 17:02:47 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,13 @@ void	ft_bzero(void *s, size_t n)
 	while (n--)
 		*ptr++ = 0;
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	char str[20] = "abcdefg";
+// 	printf("original string is :%s\n", str);
+// 	ft_bzero(str, 2);
+// 	printf("bzeroed string is :%s\n", str + 2);
+// 	return (0);
+// }

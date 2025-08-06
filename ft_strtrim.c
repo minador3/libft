@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:10:10 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/27 18:29:56 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 20:50:36 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(str, s1 + start, end - start + 1);
 	return (str);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *s1 = "\t\n\t\t  NO MORE GARBAGE INFO\t\n\t  \t";
+// 	const char *set = "\t\n \n\n\n";
+// 	printf("original string : %s\n", s1);
+// 	printf("trimmed string : %s\n", ft_strtrim(s1, set));
+// 	return (0);
+// }

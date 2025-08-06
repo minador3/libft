@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:32:49 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/01 12:01:49 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 19:49:05 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,22 @@ char	*ft_strdup(const char *s1)
 	dup[i] = '\0';
 	return (dup);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	// const char *str = NULL;
+// 	const char *str = "welcome to paris";
+// 	char *dup = ft_strdup(str);
+// 	if(!dup)
+// 	{
+// 		printf("allocation faile\n");
+// 		return (1);
+// 	}
+// 	else
+// 	{
+// 		printf("allocated string : %s\n", dup);
+// 		free(dup);
+// 	}
+// 	return (0);
+// }

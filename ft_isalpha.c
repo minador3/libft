@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:33:07 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 16:24:03 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 17:32:33 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ int	ft_isalpha(int i)
 		return (0);
 	}
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	printf("%d\n", ft_isalpha(108));
+// 	return (0);
+// }

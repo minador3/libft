@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:09:46 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/31 13:31:20 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 19:26:24 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,3 +84,25 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *fruits = "apple,banana,pineapple,cherries";
+// 	char c = ',';
+// 	char **result = ft_split(fruits, c);
+// 	if(!result)
+// 	{
+// 		printf("allocation failed\n");
+// 		return (1);
+// 	}
+// 	int i = 0;
+// 	while(result[i])
+// 	{
+// 		printf("%s\n", result[i]);
+// 		free(result[i]);
+// 		i++;
+// 	}
+// 	free(result);
+// 	return (0);
+// }

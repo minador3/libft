@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 14:13:23 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 16:27:19 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 17:33:28 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ int	ft_isdigit(int i)
 		return (0);
 	}
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	printf("%d\n", ft_isdigit(48));
+// 	return (0);
+// }

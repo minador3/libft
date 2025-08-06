@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 19:54:12 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 21:01:47 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 18:59:38 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,9 @@ void	ft_putnbr_fd(int nb, int fd)
 		ft_putchar_fd(nb + '0', fd);
 	}
 }
+// int main(void)
+// {
+// 	int fd = 1;
+// 	ft_putnbr_fd(-2147483648, fd);
+// 	return (0);
+// }

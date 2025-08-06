@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:17:30 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 16:43:56 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 20:54:54 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ int	ft_tolower(int c)
 		return (c);
 	}
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	printf("%d\n", ft_tolower(88));
+// 	return (0);
+// }

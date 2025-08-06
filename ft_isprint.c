@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:20:24 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 16:27:21 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 17:34:04 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ int	ft_isprint(int i)
 		return (0);
 	}
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	printf("%d\n", ft_isprint(125));
+// 	return (0);
+// }

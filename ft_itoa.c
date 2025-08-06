@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:09:27 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/04 11:56:46 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 17:42:14 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,22 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
+
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	int c = 2147483647;
+// 	char *result = ft_itoa(c);
+// 	if(!result)
+// 	{
+// 		printf("allocation failed\n");
+// 		return (1);
+// 	}
+// 	else
+// 	{
+// 		printf("the string representation of int : %s\n", result);
+// 		free(result);
+// 		return (0);
+// 	}
+// }

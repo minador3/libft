@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:09:29 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/26 19:44:57 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 20:29:24 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,11 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *s = "string";
+// 	printf("length is %zu\n", ft_strlen(s));
+// 	return (0);	
+// }

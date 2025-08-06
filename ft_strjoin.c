@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:10:28 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/29 16:41:24 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 19:57:30 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,22 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(result, s2, (len_s1 + len_s2 + 1));
 	return (result);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *s1 = "eras ";
+// 	const char *s2 = "tour";
+// 	char *join = ft_strjoin(s1, s2);
+// 	if(!join)
+// 	{
+// 		printf("allocation failed\n");
+// 		return (1);
+// 	}
+// 	else
+// 	{
+// 		printf("joined string : %s\n", join);
+// 		free(join);
+// 	}
+// 	return (0);
+// }

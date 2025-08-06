@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:21:14 by mwei              #+#    #+#             */
-/*   Updated: 2025/07/24 16:43:57 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 20:55:17 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,10 @@ int	ft_toupper(int c)
 		return (c);
 	}
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	printf("%d\n", ft_toupper(88));
+// 	return (0);
+// }
