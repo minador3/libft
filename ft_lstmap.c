@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 16:01:27 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 17:18:17 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 16:41:34 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,23 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
+	void	*temp;
 	t_list	*new_list;
 	t_list	*new_node;
 
-	if (!lst || !f || !del)
-		return (NULL);
 	new_list = NULL;
 	while (lst)
 	{
-		new_node = ft_lstnew(f(lst->content));
+		temp = f(lst->content);
+		if (!temp)
+		{
+			ft_lstclear(&new_list, del);
+			return (NULL);
+		}
+		new_node = ft_lstnew(temp);
 		if (!new_node)
 		{
+			del(temp);
 			ft_lstclear(&new_list, del);
 			return (NULL);
 		}
@@ -33,6 +39,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+
 // #include <stdio.h>
 
 // void	del(void *content)

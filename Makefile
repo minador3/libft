@@ -16,20 +16,20 @@ FILES_BONUS = ft_lstadd_back.c ft_lstdelone.c ft_lstmap.c\
 ft_lstadd_front.c ft_lstiter.c ft_lstnew.c\
 ft_lstclear.c ft_lstlast.c ft_lstsize.c\
 
-BONUS_OFILES = $(FILES_BONUS:.c=.o)
-
 OFILES = $(FILES:.c=.o)
+
+OFILES_BONUS = $(FILES_BONUS:.c=.o)
 
 $(NAME): $(OFILES)
 	$(AR) $(NAME) $(OFILES) 
 
 all: $(NAME)
 
-bonus: $(OFILES) $(BONUS_OFILES)
-	ar rcs $(NAME) $(OFILES) $(BONUS_OFILES)
+bonus: $(OFILES) $(OFILES_BONUS)
+	$(AR) $(NAME) $(OFILES) $(OFILES_BONUS)
 
 clean:
-	rm -f $(OFILES)
+	rm -f $(OFILES) $(OFILES_BONUS)
 
 fclean: clean
 	rm -f $(NAME)

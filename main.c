@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 15:12:57 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 17:33:45 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/06 11:45:21 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@
 	// 	printf("ft_isascii :%d\n", ft_isascii(42));
 	// 	printf("ft_isprint :%d\n", ft_isprint(42));
 
-	// printf("ft_itoa :%s\n", ft_itoa(2147483647));
+	// printf("ft_itoa :%s\n", ft_itoa(	));
 	// printf("ft_itoa :%s\n", ft_itoa(-2147483648));
 	// printf("ft_itoa :%s\n", ft_itoa(-0));
 
