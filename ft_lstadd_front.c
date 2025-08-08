@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 13:44:31 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 11:29:19 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/07 12:05:21 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,10 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 // 	ft_lstadd_front(&head, ft_lstnew("World"));
 // 	ft_lstadd_front(&head, ft_lstnew("Hello"));
 
-// 	printf("%s\n", (char *)head->content);
-// 	printf("%s\n", (char *)head->next->content);
+// 	while(head)
+// 	{
+// 		printf("the content is : %s\n", head->content);
+// 		head = head->next;
+// 	}
 // 	return (0);
 // }

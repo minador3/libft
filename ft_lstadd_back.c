@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 17:12:51 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 12:55:14 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/07 13:43:30 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 	if (!lst || !new)
 		return ;
-	last = ft_lstlast(*lst);
+	last = ft_lstlast(*lst); // find the last node in the list
 	if (!last)
-		*lst = new;
+		*lst = new; // if the list is empty, new becomes the head
 	else
-		last->next = new;
+		last->next = new; // otherwise, link the last node's next to new
 }
 
 // #include <stdio.h>
