@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/05 16:01:27 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/07 20:06:18 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/13 11:56:14 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,51 +40,51 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (new_list);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-void del(void *content)
-{
-	free(content);
-}
+// void del(void *content)
+// {
+// 	free(content);
+// }
 
-void *to_dollar(void *content)
-{
-	char *str = (char *)content;
-	char *cpy = ft_strdup(str);
-	if (!cpy)
-		return (NULL);
-	int i = 0;
-	while(cpy[i])
-	{
-		cpy[i] = '$';
-		i++;
-	}
-	return (cpy);
-}
+// void *to_dollar(void *content)
+// {
+// 	char *str = (char *)content;
+// 	char *cpy = ft_strdup(str);
+// 	if (!cpy)
+// 		return (NULL);
+// 	int i = 0;
+// 	while(cpy[i])
+// 	{
+// 		cpy[i] = '$';
+// 		i++;
+// 	}
+// 	return (cpy);
+// }
 
-int main(void)
-{
-	t_list *node1 = ft_lstnew(ft_strdup("one"));
-	t_list *node2 = ft_lstnew(ft_strdup("two"));
-	t_list *node3 = ft_lstnew(ft_strdup("three"));
+// int main(void)
+// {
+// 	t_list *node1 = ft_lstnew(ft_strdup("one"));
+// 	t_list *node2 = ft_lstnew(ft_strdup("two"));
+// 	t_list *node3 = ft_lstnew(ft_strdup("three"));
 
-	ft_lstadd_back(&node1, node2);
-	ft_lstadd_back(&node1, node3);
+// 	ft_lstadd_back(&node1, node2);
+// 	ft_lstadd_back(&node1, node3);
 	
-	t_list *temp = node1;
-	while (temp)
-	{
-		printf("%s\n", (char *)temp->content);
-		temp = temp->next;
-	}
-	t_list *mapi = ft_lstmap(node1, to_dollar, del);
-	temp = mapi;
-	while (temp)
-	{
-		printf("%s\n", (char *)temp->content);
-		temp = temp->next;
-	}
-	ft_lstclear(&node1, del);
-	ft_lstclear(&mapi, del);
-	return (0);
-}
+// 	t_list *temp = node1;
+// 	while (temp)
+// 	{
+// 		printf("%s\n", (char *)temp->content);
+// 		temp = temp->next;
+// 	}
+// 	t_list *mapi = ft_lstmap(node1, to_dollar, del);
+// 	temp = mapi;
+// 	while (temp)
+// 	{
+// 		printf("%s\n", (char *)temp->content);
+// 		temp = temp->next;
+// 	}
+// 	ft_lstclear(&node1, del);
+// 	ft_lstclear(&mapi, del);
+// 	return (0);
+// }

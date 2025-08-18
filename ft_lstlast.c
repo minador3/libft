@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 17:06:11 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/05 12:53:23 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/13 11:53:54 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,15 @@ t_list	*ft_lstlast(t_list *lst)
 
 // #include <stdio.h>
 
+// void del(void *content)
+// {
+// 	void(content);
+// }
+
+/* 
+In your example with string literals ("what", "was", "that") you should not free the content (string literals are not malloced).
+*/
+
 // int main(void)
 // {
 // 	t_list *node1 = ft_lstnew("what");
@@ -30,10 +39,12 @@ t_list	*ft_lstlast(t_list *lst)
 // 	t_list *node3 = ft_lstnew("that");
 // 	t_list *result;
 
-// 	node1->next = node2;
-// 	node2->next = node3;
+// 	ft_lstadd_back(&node1, node2);
+// 	ft_lstadd_back(&node1, node3);
+
 // 	result = ft_lstlast(node1);
 
-// 	printf("the last node is %s\n", result->content);
+// 	printf("the last node is %s\n", (char *)result->content);
+// 	ft_lstclear(&node1, del);
 // 	return (0);
 // }

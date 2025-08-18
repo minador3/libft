@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 14:44:39 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/07 13:17:02 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/18 11:31:08 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,15 +34,10 @@ int	ft_lstsize(t_list *lst)
 
 // int main(void)
 // {
-// 	t_list *node1 = ft_lstnew("hello");
-// 	t_list *node2 = ft_lstnew("paris");
-// 	t_list *node3 = ft_lstnew("ny");
-// 	t_list *node4 = ft_lstnew("ad");
+// 	t_list *node1 = ft_lstnew("one");
+// 	t_list *node2 = ft_lstnew("two");
 
-// 	node1->next = node2;
-// 	node2->next = node3;
-// 	node3->next = node4;
-	
+// 	ft_lstadd_back(&node1, node2);
 // 	printf("%d\n", ft_lstsize(node1));
 // 	ft_lstclear(&node1, del);
 // 	return (0);

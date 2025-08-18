@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 13:44:31 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/07 12:05:21 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/10 12:49:07 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,19 +20,23 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 
-// #include <stdio.h>
-
-// int	main(void)
+// void del(void *content)
 // {
-// 	t_list	*head = NULL;
+// 	free(content);
+// }
 
-// 	ft_lstadd_front(&head, ft_lstnew("World"));
-// 	ft_lstadd_front(&head, ft_lstnew("Hello"));
+// int main(void)
+// {
+// 	t_list *node1 = ft_lstnew(ft_strdup("one"));
+// 	t_list *node2 = ft_lstnew(ft_strdup("two"));
 
-// 	while(head)
+// 	ft_lstadd_front(&node1, node2);
+// 	t_list *temp = node1;
+// 	while (temp)
 // 	{
-// 		printf("the content is : %s\n", head->content);
-// 		head = head->next;
+// 		printf("%s\n", (char *)temp->content);
+// 		temp = temp->next;
 // 	}
+// 	ft_lstclear(&node1, del);
 // 	return (0);
 // }

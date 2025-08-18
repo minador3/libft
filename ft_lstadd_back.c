@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/04 17:12:51 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/07 13:43:30 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/13 11:43:20 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 
 // 	printf("the first node: %c\n", *(char *)head->content);
 // 	printf("the second node: %c\n", *(char *)head->next->content);
+// 	ft_lstclean(&head, del);
 // 	return (0);
 // }

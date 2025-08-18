@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:41:41 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/06 20:27:27 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/18 11:32:24 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,20 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t destsize)
 	return (src_len);
 }
 // #include <stdio.h>
+// #include <string.h>
+
 
 // int main(void)
 // {
-// 	const char *src = "im replacing you";
-// 	char dst[] = "hello";
-// 	printf("%zu\n", ft_strlcpy(dst, src, 15));
+// 	char *src = "abc";
+// 	char dst1[10] = "1234567";
+// 	char dst2[10] = "1234567";
+
+	
+// 	size_t ft_cpy = ft_strlcpy(dst1, src, 9);
+// 	printf("%zu\n", ft_cpy);
+
+// 	size_t cpy = strlcpy(dst2, src, 9);
+// 	printf("%zu\n", cpy);
 // 	return (0);
 // }

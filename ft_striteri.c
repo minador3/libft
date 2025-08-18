@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/26 21:08:26 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/08 14:44:02 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/18 11:31:49 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-#include <stdio.h>
+// #include <stdio.h>
 
-void to_astriks(unsigned int i, char *s)
-{
-	(void)i;
-	*s = '*';
-}
+// void to_astriks(unsigned int i, char *s)
+// {
+// 	(void)i;
+// 	*s = '*';
+// }
 
-int main(void)
-{
-	char str[20] = "password";
-	printf("original string : %s\n", str);
-	ft_striteri(str, to_astriks);
-	printf("modified string : %s\n", str);
-	return (0);
-}
+// int main(void)
+// {
+// 	char str[20] = "password";
+// 	printf("original string : %s\n", str);
+// 	ft_striteri(str, to_astriks);
+// 	printf("modified string : %s\n", str);
+// 	return (0);
+// }

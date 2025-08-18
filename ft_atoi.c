@@ -6,7 +6,7 @@
 /*   By: mwei <mwei@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:33:09 by mwei              #+#    #+#             */
-/*   Updated: 2025/08/07 14:51:21 by mwei             ###   ########.fr       */
+/*   Updated: 2025/08/13 11:41:58 by mwei             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,17 +43,10 @@ int	ft_atoi(const char *str)
 
 // int main(void)
 // {
-// 	printf("ft_atoi : %d\n", ft_atoi("9223372036854775807"));
-// 	printf("   atoi : %d\n", atoi("9223372036854775807"));
-// 	printf("\n");
-// 	printf("ft_atoi : %d\n", ft_atoi("9223372036854775808"));
-// 	printf("   atoi : %d\n", atoi("9223372036854775808"));
-// 	printf("\n");
-// 	printf("ft_atoi : %d\n", ft_atoi("-9223372036854775808"));
-// 	printf("   atoi : %d\n", atoi("-9223372036854775808"));
-// 	printf("\n");
-// 	printf("ft_atoi : %d\n", ft_atoi("-9223372036854775809"));
-// 	printf("   atoi : %d\n", atoi("-9223372036854775809"));
-// 	printf("\n");
+// 	char *str = "				   -+35745445343545435435";
+// 	if (ft_atoi(str) == atoi(str))
+// 		printf("they are equal\n");
+// 	else
+// 		printf("they are not equal\n");
 // 	return (0);
 // }
